@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh; /* Mengatur tinggi body sesuai dengan tinggi viewport */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #ffc0cb); /* Gradien dari putih ke pink */
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100%; /* Mengatur tinggi container agar minimal setinggi body */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-top: 50px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    position: relative; /* Tambahkan ini agar elemen anak dengan posisi absolut terikat ke section hero */
+}
+
+.hero-content {
+    max-width: 50%;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.hero-content h2 {
+    color: #ff4081;
+    font-size: 26px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    color: #333;
+    font-weight: bold;
+    
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #000000;
+    font-family: Poppins;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+
+.hero-content ul li{
+    font-size: 18px;
+    color: #000000;
+    font-family: Poppins;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+
+
+.btn {
+    background-color: #800080;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.hero-image img {
+    width: 670px; /* Ukuran gambar diperbesar */
+    height: auto;
+    position: absolute; /* Posisi absolut */
+    right: -100px; /* Menjauhkan gambar ke kanan */
+    top: 55%; /* Menyesuaikan posisi vertikal */
+    transform: translateY(-50%); /* Menyelaraskan secara vertikal */
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.vak {
+    font-size: 3em;
+    color: #800080;
+    margin-bottom: 10px;
+    font-family: Poppins, sans-serif;
+    font-weight: 800; 
+    margin-left: 140px;
+}
+
+.info {
+    margin-top: 120px; /* Tambahkan jarak atas agar tidak tertindih */
+    padding-top: 50px; /* Menambahkan padding atas untuk memberikan ruang lebih */
+}
+
+.characteristics-content,
+.advantages-content {
+    padding-bottom: 50px; /* Menambahkan jarak ke bawah */
+}
+
+.characteristics {
+    margin-bottom: 10px;
+}
+
+.characteristics h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.char {
+    margin-bottom: 30px; 
+    text-align: justify;
+}
+
+.advantages ul {
+    margin-bottom: 30px; 
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.advantages h2 {
+    margin-bottom: 30px; 
+}
+
+.disadvantages ul {
+    margin-bottom: 30px; 
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.disadvantages h2 {
+    margin-bottom: 30px; 
+}
+
+.strengths-challenges ul {
+    margin-bottom: 30px; 
+    margin-left: 30px;
+}
+
+.strengths-challenges h2 {
+    margin-bottom: 30px; 
+}
+
+.useful-advice ul {
+    margin-bottom: 30px; 
+    margin-left: 30px;
+}
+
+.useful-advice h2 {
+    margin-bottom: 30px; 
+}

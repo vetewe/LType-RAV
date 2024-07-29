@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #ffc0cb); /* Gradien dari putih ke pink */
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    flex: 1; /* Membuat container mengisi tinggi yang tersisa */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    position: relative; /* Tambahkan ini agar elemen anak dengan posisi absolut terikat ke section hero */
+}
+
+.hero-content {
+    max-width: 50%;
+    padding-top: 50px;
+}
+
+.hero-content h2 {
+    color: #ff4081;
+    font-size: 24px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+    font-family: Poppins;
+}
+
+.btn {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+
+}
+
+.hero-image img {
+    width: 700px; /* Ukuran gambar diperbesar */
+    height: auto;
+    position: absolute; /* Posisi absolut */
+    right: -100px; /* Menjauhkan gambar ke kanan */
+    top: 70%; /* Menyesuaikan posisi vertikal */
+    transform: translateY(-50%); /* Menyelaraskan secara vertikal */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
